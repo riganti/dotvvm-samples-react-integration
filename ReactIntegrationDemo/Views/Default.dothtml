@@ -1,0 +1,19 @@
+﻿@viewModel ReactIntegrationDemo.ViewModels.DefaultViewModel, ReactIntegrationDemo
+@masterPage Views/MasterPage.dotmaster
+@js ReactAppModule
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div data-ui="rechart-control">
+        <js:recharts data={value: Data}
+                     onMouse={staticCommand: (string n) => CurrentThing = n}>
+        </js:recharts>
+    </div>
+
+    <p>Currently selected item: {{value: CurrentThing}}</p>
+
+    <p>
+        <dot:Button Text="Regenerate data" Click="{command: Regenerate()}" />
+    </p>
+
+</dot:Content>
