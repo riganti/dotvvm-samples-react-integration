@@ -5,6 +5,17 @@
 <head>
     <meta charset="utf-8" />
     <title>ReactIntegrationDemo</title>
+
+    <style type="text/css">
+        .updown {
+            font-size: 24pt;
+        }
+            .updown button {
+                font-size: 24pt;
+                padding: 10px;
+                margin: 10px;
+            }
+    </style>
 </head>
 <body>
 

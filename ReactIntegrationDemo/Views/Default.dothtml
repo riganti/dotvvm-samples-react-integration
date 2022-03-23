@@ -4,7 +4,23 @@
 
 <dot:Content ContentPlaceHolderID="MainContent">
 
-    <div data-ui="rechart-control">
+    <h1>React integration demo</h1>
+
+    <h2>Trivial demo</h2>
+    <div class="updown">
+        <js:updown value="{value: Value}" 
+                   min="1"
+                   max="10"
+                   onUpdate="{staticCommand: (int v) => Value = v}" />
+
+        <p>
+            Result: <dot:TextBox Text="{value: Value}" />
+        </p>
+    </div>
+
+
+    <h2>Recharts</h2>
+    <div>
         <js:recharts data={value: Data}
                      onMouse={staticCommand: (string n) => CurrentThing = n}>
         </js:recharts>

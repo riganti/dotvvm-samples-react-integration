@@ -8,7 +8,9 @@ namespace ReactIntegrationDemo.ViewModels
     public class DefaultViewModel : MasterPageViewModel
     {
         private Random random = new Random();
-        
+
+        public int Value { get; set; } = 1;
+
         public List<LinearRechartDataDTO> Data { get; set; }
 
         public string CurrentThing { get; set; } = "?";
