@@ -1,0 +1,50 @@
+@viewModel dotvvm_react.ViewModels.DefaultViewModel
+@js diagrams
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        html,
+        body,
+        #root {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td> Node </td>
+                <td> Selected </td>
+                <td> X </td>
+                <td> Y </td>
+            </tr>
+        </thead>
+        <dot:Repeater DataSource={value: Nodes} WrapperTagName="tbody">
+            <tr>
+                <td> {{value: Name}} </td>
+                <td> <dot:CheckBox CheckedValue={value: Name} CheckedItems={value: _root.Selected} /> </td>
+                <td> <dot:TextBox type=number Text={{value: Position.X}} step=5 /> </td>
+                <td> <dot:TextBox type=number Text={{value: Position.Y}} step=5 /></td>
+            </tr>
+        </dot:Repeater>
+    </table>
+
+    <js:diagram links={value: Links}
+                nodes={value: Nodes}
+
+                selection={value: Selected}
+
+                nodeChanged={staticCommand: (string name, PositionViewModel p) =>
+                    Nodes.FirstOrDefault(n => n.Name == name).Position = p;}
+
+                selectionChanged={staticCommand: (string[] newSelection) => Selected = newSelection}
+        />
+</body>
+</html>
