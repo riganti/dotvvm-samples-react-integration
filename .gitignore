@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Recharts_UpDown/wwwroot/ReactAppModule.js
+/Digraph/build

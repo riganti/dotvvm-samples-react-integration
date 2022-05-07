@@ -1,4 +1,4 @@
-﻿@viewModel ReactIntegrationDemo.ViewModels.DefaultViewModel, ReactIntegrationDemo
+﻿@viewModel Recharts_UpDown.ViewModels.DefaultViewModel, Recharts_UpDown
 @masterPage Views/MasterPage.dotmaster
 @js ReactAppModule
 

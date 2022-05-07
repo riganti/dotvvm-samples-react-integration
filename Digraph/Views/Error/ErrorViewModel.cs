@@ -1,14 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
-using DotVVM.Framework.ViewModel;
 using DotVVM.Framework.Hosting;
+using DotVVM.Framework.ViewModel;
 using Microsoft.AspNetCore.Diagnostics;
 
-namespace dotvvm_react.ViewModels;
+namespace Digraph.ViewModels;
 public class ErrorViewModel : DotvvmViewModelBase
 {
     [Bind(Direction.None)]
@@ -29,9 +24,9 @@ public class ErrorViewModel : DotvvmViewModelBase
     {
         var aspcontext = Context.GetAspNetCoreContext();
         var exceptionInfo = aspcontext.Features.Get<IExceptionHandlerFeature>();
-        ExceptionType = exceptionInfo.Error.GetType().Name;
+        ExceptionType = exceptionInfo?.Error.GetType().Name ?? "";
         RequestId = aspcontext.TraceIdentifier;
-        RequestPath = exceptionInfo.Path;
+        RequestPath = exceptionInfo?.Path ?? "";
         return base.Init();
     }
 }

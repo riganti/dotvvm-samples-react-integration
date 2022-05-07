@@ -3,7 +3,7 @@ using DotVVM.Framework.ResourceManagement;
 using DotVVM.Framework.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ReactIntegrationDemo
+namespace Recharts_UpDown
 {
     public class DotvvmStartup : IDotvvmStartup, IDotvvmServiceConfigurator
     {

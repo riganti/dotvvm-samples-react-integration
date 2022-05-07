@@ -1,4 +1,4 @@
-@viewModel dotvvm_react.ViewModels.DefaultViewModel
+@viewModel Digraph.ViewModels.DefaultViewModel
 @js diagrams
 
 <!DOCTYPE html>

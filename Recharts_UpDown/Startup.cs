@@ -1,13 +1,12 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using DotVVM.Framework.Routing;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using DotVVM.Framework.Hosting;
-using DotVVM.Framework.Routing;
 
-namespace ReactIntegrationDemo
+namespace Recharts_UpDown
 {
     public class Startup
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ReactIntegrationDemo.ViewModels
+namespace Recharts_UpDown.ViewModels
 {
     public class DefaultViewModel : MasterPageViewModel
     {

@@ -1,10 +1,8 @@
-using DotVVM.Framework;
 using DotVVM.Framework.Configuration;
 using DotVVM.Framework.ResourceManagement;
-using DotVVM.Framework.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dotvvm_react;
+namespace Digraph;
 public class DotvvmStartup : IDotvvmStartup, IDotvvmServiceConfigurator
 {
     // For more information about this class, visit https://dotvvm.com/docs/tutorials/basics-project-structure
