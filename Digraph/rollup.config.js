@@ -21,6 +21,7 @@ export default [{
         }),
         typescript({ typescript: ts }),
         replace({
+            preventAssignment: true,
             'process.env.NODE_ENV': JSON.stringify('development')
         }),
         production ? terser() : null

@@ -6,7 +6,10 @@ This sample shows how to host React components in [DotVVM](https://github.com/ri
 
 ### Prerequisites
 
-* Make sure you have installed [DotVVM for Visual Studio](https://www.dotvvm.com/install)
+* .NET 6
+* [node.js and npm](https://nodejs.org/en/download/)
+* Optionally, [yarn package manager](https://yarnpkg.com/) (as alternative to npm)
+* Optionally, [DotVVM for Visual Studio](https://www.dotvvm.com/install)
 
 ### How to run the sample
 
@@ -27,7 +30,7 @@ npm install
 npm run build
 ```
 
-2. Right-click the `Recharts_UpDown` project and select **View > View in Browser**
+2. Execute `dotnet run` or right-click the `Recharts_UpDown` project and select **View > View in Browser**
 ![View Recharts_UpDown in Browser](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri003.png)
 
 3. You can interact with the React components in the page and see how they are able to synchronize with the other controls in the page.
@@ -40,11 +43,13 @@ npm run build
 
 ```
 cd Digraph
-npm install
-npm run build
+yarn install
+yarn build
 ```
 
-2. Right-click the `Digraph` project and select **View > View in Browser**
+> Note that we need to use `yarn` in this sample, npm is unable to resolve dependencies.
+
+2. Execute `dotnet run` or right-click the `Digraph` project and select **View > View in Browser**
 ![View Digraph in Browser](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri005.png)
 
 3. You can interact with the React components in the page and see how they are able to synchronize with the other controls in the page.
