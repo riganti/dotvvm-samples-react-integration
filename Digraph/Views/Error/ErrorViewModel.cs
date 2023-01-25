@@ -10,10 +10,10 @@ public class ErrorViewModel : DotvvmViewModelBase
     public string? RequestId { get; set; }
 
     [Bind(Direction.None)]
-    public string ExceptionType { get; set; }
+    public string? ExceptionType { get; set; }
 
     [Bind(Direction.None)]
-    public string RequestPath { get; set; }
+    public string? RequestPath { get; set; }
 
 
     public ErrorViewModel()
