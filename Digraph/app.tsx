@@ -1,5 +1,5 @@
 ﻿import * as React from 'react'
-import { registerReactControl } from './dotvvm-react'
+import { registerReactControl } from 'dotvvm-jscomponent-react'
 import { GraphView, type INode } from 'react-digraph'
 
 const GraphConfig = {

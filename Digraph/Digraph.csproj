@@ -21,4 +21,19 @@
   <Target Name="CreateWWWRoot" AfterTargets="AfterPublish">
     <MakeDir Directories="$(PublishDir)wwwroot" Condition="!Exists('$(PublishDir)wwwroot')" />
   </Target>
+
+  <ItemGroup>
+    <!-- the wildcard would not work in Target.Inputs, it only works in Include -->
+    <TypescriptFile Include="**/*.ts;**/*.tsx" />
+  </ItemGroup>
+  <!-- BeforeBuild is ran for every target framework. However, unless its input files change, this target is skipped. -->
+  <Target Name="CompileJS" Inputs="@(TypescriptFile)" Outputs="./build/react-app.js" BeforeTargets="DispatchToInnerBuilds;BeforeBuild">
+
+    <PropertyGroup>
+      <EnvOverrides>NO_COLOR=1;FORCE_COLOR=0;TERM=dumb</EnvOverrides>
+    </PropertyGroup>
+    <!-- Some Linux distros use yarnpkg as name for  -->
+    <Exec Command="yarnpkg install --immutable" ContinueOnError="true" EnvironmentVariables="$(EnvOverrides)" />
+    <Exec Command="yarnpkg build" ContinueOnError="true" YieldDuringToolExecution="True" ConsoleToMSBuild="true" EnvironmentVariables="$(EnvOverrides)" />
+  </Target>
 </Project>
