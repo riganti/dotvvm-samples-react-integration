@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recharts_UpDown", "Recharts
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digraph", "Digraph\Digraph.csproj", "{4BD470EC-6748-438A-940B-4C0A5E431552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kendo", "Kendo\Kendo.csproj", "{548A69BA-E9E0-4C78-8C49-0B5255082E1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4BD470EC-6748-438A-940B-4C0A5E431552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BD470EC-6748-438A-940B-4C0A5E431552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BD470EC-6748-438A-940B-4C0A5E431552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548A69BA-E9E0-4C78-8C49-0B5255082E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548A69BA-E9E0-4C78-8C49-0B5255082E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548A69BA-E9E0-4C78-8C49-0B5255082E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548A69BA-E9E0-4C78-8C49-0B5255082E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

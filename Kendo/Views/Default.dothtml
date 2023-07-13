@@ -1,0 +1,19 @@
+﻿@viewModel Kendo.ViewModels.DefaultViewModel, Kendo
+@masterPage Views/MasterPage.dotmaster
+@js Scheduler
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="content">
+
+        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image--left" />
+
+        <a href="https://www.dotvvm.com/" target="_blank">
+            <img src="/Resources/Images/text.svg" class="content__image" />
+        </a>
+
+        <js:schedulerComponent data={value: Data}/>
+         
+        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image content__background-image--right" />
+    </div>
+</dot:Content>
