@@ -8,7 +8,7 @@ import {
     DayView,
     WeekView,
     MonthView,
-} from "@progress/kendo-react-scheduler";
+} from "@progress/kendo-react-all";
 
 const testDate: Date = new Date("2023-08-27T08:00:00.000Z");
 const data: any[] = [
@@ -20,9 +20,9 @@ const data: any[] = [
     }
 ];
 
-const scheduler = (sampleData, displayDate) => {
+const scheduler = props => {
     return (
-        <Scheduler data={sampleData} defaultDate={displayDate} timezone="Etc/UTC">
+        <Scheduler data={props.sampleData} defaultDate={props.displayDate} timezone="Etc/UTC">
             <DayView />
             <WeekView />
         </Scheduler>
