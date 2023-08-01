@@ -8,23 +8,25 @@ namespace Kendo.ViewModels
 {
     public class DefaultViewModel : MasterPageViewModel
     {
-        public List<SchedulerDataDto> Data { get; set; } = new List<SchedulerDataDto>()
+        public List<SchedulerDataDto> Data { get; set; } = new()
         {
             new SchedulerDataDto()
             {
-                Id = 0,
-                Title = "Lunch with Eve",
-                Start = DateTime.Parse("2023-08-27T19:30:00.000Z"),
-                End = DateTime.Parse("2023-08-27T21:00:00.000Z")
+                id = 1,
+                title = "Dinner with Eve",
+                start = new DateTime(2023, 08, 27, 12, 30,00),
+                end = new DateTime(2023, 08, 27, 13, 00,00)
             }
         };
 
+        public DateTime Time { get; set; } = new DateTime(2023, 08, 27, 12, 00,00); /*("2023-08-27T12:00:00.000Z;*/
+
 		public class SchedulerDataDto
         {
-            public int Id { get; set; }
-            public string Title { get; set; }
-            public DateTime Start { get; set; }
-            public DateTime End { get; set; }
+            public int id { get; set; }
+            public string title { get; set; }
+            public DateTime start { get; set; }
+            public DateTime end { get; set; }
         }
 
     }

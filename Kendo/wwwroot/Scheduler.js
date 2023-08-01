@@ -136,9 +136,11 @@ var data = [
     end: /* @__PURE__ */ new Date("2023-08-27T09:00:00.000Z")
   }
 ];
-var scheduler = (props) => {
-  return /* @__PURE__ */ React2.createElement(import_kendo_react_all.Scheduler, { data: props.sampleData, defaultDate: props.displayDate, timezone: "Etc/UTC" }, /* @__PURE__ */ React2.createElement(import_kendo_react_all.DayView, null), /* @__PURE__ */ React2.createElement(import_kendo_react_all.WeekView, null));
-};
+function scheduler(props) {
+  const data2 = props.sampleData.map((item) => ({ ...item, start: dotvvm.serialization.parseDate(item.start), end: dotvvm.serialization.parseDate(item.end) }));
+  return /* @__PURE__ */ React2.createElement(import_kendo_react_all.Scheduler, { data: data2, defaultDate: dotvvm.serialization.parseDate(props.displayDate), timezone: "Etc/UTC" }, /* @__PURE__ */ React2.createElement(import_kendo_react_all.DayView, null), /* @__PURE__ */ React2.createElement(import_kendo_react_all.WeekView, null), /* @__PURE__ */ React2.createElement(import_kendo_react_all.AgendaView, null), /* @__PURE__ */ React2.createElement(import_kendo_react_all.TimelineView, null), /* @__PURE__ */ React2.createElement(import_kendo_react_all.MonthView, null));
+}
+;
 var Scheduler_default = (context) => ({
   $controls: {
     schedulerComponent: registerReactControl(scheduler, {

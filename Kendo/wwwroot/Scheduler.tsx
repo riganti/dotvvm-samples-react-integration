@@ -20,11 +20,16 @@ const data: any[] = [
     }
 ];
 
-const scheduler = props => {
+function scheduler(props: any) {
+    const data = props.sampleData.map((item: any) => ({ ...item, start: dotvvm.serialization.parseDate(item.start), end: dotvvm.serialization.parseDate(item.end)}));
+
     return (
-        <Scheduler data={props.sampleData} defaultDate={props.displayDate} timezone="Etc/UTC">
+        <Scheduler data={data} defaultDate={dotvvm.serialization.parseDate(props.displayDate)} timezone="Etc/UTC">
             <DayView />
             <WeekView />
+            <AgendaView />
+            <TimelineView />
+            <MonthView />
         </Scheduler>
     );
 };
