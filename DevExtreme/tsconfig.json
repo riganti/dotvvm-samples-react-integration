@@ -1,0 +1,14 @@
+﻿{
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "module": "ES2020",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/dotvvm-types"
+    ],
+    "skipLibCheck": true,
+    "importHelpers": true
+  }
+}
