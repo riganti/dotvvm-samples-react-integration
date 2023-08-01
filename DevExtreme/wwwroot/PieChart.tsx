@@ -43,7 +43,7 @@ function pieChart(props: any) {
 
 export default (context: any) => ({
     $controls: {
-        schedulerComponent: registerReactControl(pieChart,{
+        PieChart: registerReactControl(pieChart,{
             context,
             sampleData: billionaires,
             onClick() { /* do nothing when onClick is not set */ }

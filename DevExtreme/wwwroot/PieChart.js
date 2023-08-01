@@ -72016,7 +72016,7 @@ function pieChart(props) {
 }
 var PieChart_default = (context) => ({
   $controls: {
-    schedulerComponent: registerReactControl(pieChart, {
+    PieChart: registerReactControl(pieChart, {
       context,
       sampleData: billionaires,
       onClick() {
