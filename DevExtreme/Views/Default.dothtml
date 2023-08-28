@@ -6,15 +6,11 @@
 
     <div class="content">
 
-        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image--left" />
+        <h1>React integration demo</h1>
 
-        <a href="https://www.dotvvm.com/" target="_blank">
-            <img src="/Resources/Images/text.svg" class="content__image" />
-        </a>
+        <h2>DevExtreme trivial demo</h2>
 
-        <js:PieChart />
+        <js:pieChartComponent sampleData="{value: Data}" />
 
-
-        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image content__background-image--right" />
     </div>
 </dot:Content>

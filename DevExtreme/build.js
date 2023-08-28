@@ -12,9 +12,8 @@ async function main() {
                 'es2020'
             ],
             sourcemap: true,
-            treeShaking: false,
-            minify: false,
-            mangleProps: /^_/
+            treeShaking: true,
+            minify: true
         });
     } catch (err) {
         console.error(`Cannot build : ${err}`);
