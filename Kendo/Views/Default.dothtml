@@ -1,0 +1,16 @@
+﻿@viewModel Kendo.ViewModels.DefaultViewModel, Kendo
+@masterPage Views/MasterPage.dotmaster
+@js Scheduler
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="content">
+
+        <h1>React integration demo</h1>
+
+        <h2>Kendo trivial demo</h2>
+
+        <js:schedulerComponent sampleData="{value: Data}" displayDate="{value: Time}" />
+
+    </div>
+</dot:Content>

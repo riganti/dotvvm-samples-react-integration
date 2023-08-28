@@ -1,0 +1,17 @@
+﻿@viewModel Kendo.ViewModels.MasterPageViewModel, Kendo
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kendo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-material/dist/all.css"></link>
+    <dot:RequiredResource Name="Styles" />
+</head>
+<body>
+ 	
+    <dot:ContentPlaceHolder ID="MainContent" />
+
+</body>
+</html>
