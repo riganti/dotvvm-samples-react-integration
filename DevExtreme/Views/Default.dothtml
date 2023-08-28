@@ -1,0 +1,16 @@
+﻿@viewModel DevExtreme.ViewModels.DefaultViewModel, DevExtreme
+@masterPage Views/MasterPage.dotmaster
+@js PieChart
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="content">
+
+        <h1>React integration demo</h1>
+
+        <h2>DevExtreme trivial demo</h2>
+
+        <js:pieChartComponent sampleData="{value: Data}" />
+
+    </div>
+</dot:Content>
