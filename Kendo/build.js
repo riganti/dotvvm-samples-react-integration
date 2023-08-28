@@ -1,5 +1,4 @@
 import esbuild from 'esbuild'
-import externalGlobalPlugin from 'esbuild-plugin-external-global';
 
 async function main() {
     
@@ -13,17 +12,8 @@ async function main() {
                 'es2020'
             ],
             sourcemap: true,
-            treeShaking: false,
-            minify: false,
-            mangleProps: /^_/,
-            external: ["react", "react-dom", "@progress/kendo-react-all"],
-            plugins: [
-                externalGlobalPlugin.externalGlobalPlugin({
-                    'react': 'window.React',
-                    'react-dom': 'window.ReactDOM',
-                    '@progress/kendo-react-all': 'window.KendoReactAll'
-                })
-            ]
+            treeShaking: true,
+            minify: true
         });
     } catch (err) {
         console.error(`Cannot build : ${err}`);

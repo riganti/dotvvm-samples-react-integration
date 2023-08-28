@@ -6,14 +6,11 @@
 
     <div class="content">
 
-        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image--left" />
+        <h1>React integration demo</h1>
 
-        <a href="https://www.dotvvm.com/" target="_blank">
-            <img src="/Resources/Images/text.svg" class="content__image" />
-        </a>
+        <h2>Kendo trivial demo</h2>
 
-        <js:schedulerComponent sampleData="{value: Data}" displayDate="{value: Time}"/>
-         
-        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image content__background-image--right" />
+        <js:schedulerComponent sampleData="{value: Data}" displayDate="{value: Time}" />
+
     </div>
 </dot:Content>

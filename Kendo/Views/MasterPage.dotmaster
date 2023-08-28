@@ -6,25 +6,11 @@
     <meta charset="utf-8" />
     <title>Kendo</title>
 
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.7.2/prop-types.min.js"></script>
-    <script src="https://unpkg.com/@progress/kendo-date-math/dist/cdn/js/kendo-date-math.js"></script>
-    <script src="https://unpkg.com/@progress/kendo-drawing/dist/cdn/js/kendo-drawing.js"></script>
-    <script src="https://unpkg.com/@progress/kendo-licensing/dist/index.js"></script>
-
-    <script src="https://unpkg.com/@progress/kendo-react-intl/dist/cdn/js/kendo-react-intl.js"></script>
-    <script src="https://unpkg.com/@progress/kendo-react-all/dist/cdn/js/kendo-react-all.js"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-material/dist/all.css"></link>
-
     <dot:RequiredResource Name="Styles" />
 </head>
 <body>
-
  	
-
     <dot:ContentPlaceHolder ID="MainContent" />
 
 </body>

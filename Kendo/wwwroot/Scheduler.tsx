@@ -8,7 +8,7 @@ import {
     DayView,
     WeekView,
     MonthView,
-} from "@progress/kendo-react-all";
+} from '@progress/kendo-react-scheduler';
 
 const testDate: Date = new Date("2023-08-27T08:00:00.000Z");
 const data: any[] = [
