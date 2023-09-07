@@ -1,0 +1,16 @@
+﻿@viewModel Syncfusion.ViewModels.DefaultViewModel, Syncfusion
+@masterPage Views/MasterPage.dotmaster
+@js Grid
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="content">
+
+        <h1>React integration demo</h1>
+
+        <h2>Syncfusion grid demo</h2>
+
+        <js:gridComponent sampleData="{value: Data}" />
+
+    </div>
+</dot:Content>
