@@ -361,6 +361,14 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
 /Recharts_UpDown/wwwroot/ReactAppModule.js
+
 /Digraph/build
+
+/DevExtreme/wwwroot/PieChart.js
+/DevExtreme/wwwroot/PieChart.js.map
+
 /Kendo/kendo-ui-license.txt
+/Kendo/wwwroot/Scheduler.js
+/Kendo/wwwroot/Scheduler.js.map
