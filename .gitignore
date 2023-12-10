@@ -372,3 +372,9 @@ FodyWeavers.xsd
 /Kendo/kendo-ui-license.txt
 /Kendo/wwwroot/Scheduler.js
 /Kendo/wwwroot/Scheduler.js.map
+/Syncfusion/wwwroot/DateTimePicker.js
+/Syncfusion/wwwroot/Grid.js
+/Syncfusion/wwwroot/SyncfusionModule.css
+/Syncfusion/wwwroot/SyncfusionModule.css.map
+/Syncfusion/wwwroot/SyncfusionModule.js
+/Syncfusion/wwwroot/SyncfusionModule.js.map

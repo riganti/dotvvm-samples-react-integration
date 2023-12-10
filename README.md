@@ -59,7 +59,7 @@ dotnet run
 
 1. Obtain a license of [Telerik KendoReact](https://www.telerik.com/kendo-react-ui) and place the license text file to the following path: `Kendo/kendo-ui-license.txt`
 
-2. In your favorite shell, navigate in the solution directory and run the following commands. Make sure `yarn` is installed
+2. In your favorite shell, navigate in the solution directory and run the following commands. 
 
 ```
 cd Kendo
@@ -75,11 +75,11 @@ npm run build
 ![Kendo components demo](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri008.png)
 
 
-### Sample 3: DevExtreme React integration
+### Sample 4: DevExtreme React integration
 
 1. Obtain a license of [DevExtreme React](https://js.devexpress.com/React/).
 
-2. In your favorite shell, navigate in the solution directory and run the following commands. Make sure `yarn` is installed
+2. In your favorite shell, navigate in the solution directory and run the following commands. 
 
 ```
 cd DevExtreme
@@ -93,6 +93,27 @@ npm run build
 4. You can interact with the React components in the page and see how they are able to synchronize with the other controls in the page.
 
 ![DevExtreme components demo](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri010.png)
+
+
+
+### Sample 5: Syncfusion React UI integration
+
+1. Obtain a license of [Syncfusion React UI](https://www.syncfusion.com/react-components).
+
+2. In your favorite shell, navigate in the solution directory and run the following commands. 
+
+```
+cd Syncfusion
+npm ci
+npm run build
+```
+
+3. Execute `dotnet run` or right-click the `Syncfusion` project and select **View > View in Browser**
+![View Syncfusion in Browser](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri011.png)
+
+4. You can interact with the React components in the page and see how they are able to synchronize with the other controls in the page.
+
+![Syncfusion components demo](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri012.png)
 
 
 ### What you can learn in the sample

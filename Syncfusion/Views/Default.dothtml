@@ -1,0 +1,30 @@
+﻿@viewModel Syncfusion.ViewModels.DefaultViewModel, Syncfusion
+@masterPage Views/MasterPage.dotmaster
+@js SyncfusionModule
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="content">
+
+        <h1>React integration demo</h1>
+
+        <h2>Syncfusion grid demo</h2>
+
+        <js:gridComponent data="{value: Data}" 
+                          columns="{resource: GridColumns}"
+                          onRowSelected="{staticCommand: (int rowIndex) => SelectedRowIndex = rowIndex}"/>
+
+        <p>Selected row index: {{value: SelectedRowIndex}}</p>
+    
+        <hr />
+
+        <p>
+            Date-time picker:
+            <dot:TextBox Text="{value: SelectedDate}" Type="DateTimeLocal" />
+        </p>
+        <p>
+            <js:dateTimePickerComponent value={value: SelectedDate} onValueChanged="{staticCommand: (DateTime? value) => SelectedDate = value}" />
+        </p>
+    </div>
+
+</dot:Content>
