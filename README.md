@@ -26,8 +26,8 @@ or
 
 ```
 cd Recharts_UpDown
-npm install
-npm run build
+yarn install --immutable
+yarn build
 ```
 
 2. Execute `dotnet run` or right-click the `Recharts_UpDown` project and select **View > View in Browser**
@@ -55,16 +55,56 @@ dotnet run
 
 > In order to rebuild JavaScript files faster, `yarn dev` command can be used to start rollup in watch mode.
 
+### Sample 3: Telerik KendoReact integration
+
+1. Obtain a license of [Telerik KendoReact](https://www.telerik.com/kendo-react-ui) and place the license text file to the following path: `Kendo/kendo-ui-license.txt`
+
+2. In your favorite shell, navigate in the solution directory and run the following commands. Make sure `yarn` is installed
+
+```
+cd Kendo
+npm ci
+npm run build
+```
+
+3. Execute `dotnet run` or right-click the `Kendo` project and select **View > View in Browser**
+![View Kendo in Browser](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri007.png)
+
+4. You can interact with the React components in the page and see how they are able to synchronize with the other controls in the page.
+
+![Kendo components demo](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri008.png)
+
+
+### Sample 3: DevExtreme React integration
+
+1. Obtain a license of [DevExtreme React](https://js.devexpress.com/React/).
+
+2. In your favorite shell, navigate in the solution directory and run the following commands. Make sure `yarn` is installed
+
+```
+cd DevExtreme
+npm ci
+npm run build
+```
+
+3. Execute `dotnet run` or right-click the `DevExtreme` project and select **View > View in Browser**
+![View DevExtreme in Browser](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri009.png)
+
+4. You can interact with the React components in the page and see how they are able to synchronize with the other controls in the page.
+
+![DevExtreme components demo](https://raw.githubusercontent.com/riganti/dotvvm-samples-react-integration/master/images/ri010.png)
+
+
 ### What you can learn in the sample
 
 * Wrapping React components to be used in DotVVM using the `<js:Component />` control.
-* Set up rollup pipeline to bundle all resources together
+* Set up rollup or esbuild pipeline to bundle all resources together
 
 ---
 
 ## Other resources
 
-* [Gitter Chat](https://gitter.im/riganti/dotvvm)
+* [DotVVM Forum](https://forum.dotvvm.com)
 * [DotVVM Official Website](https://www.dotvvm.com)
 * [DotVVM Documentation](https://www.dotvvm.com/docs)
 * [DotVVM GitHub](https://github.com/riganti/dotvvm)
