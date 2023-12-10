@@ -6,7 +6,7 @@ async function main() {
         await esbuild.build({
             format: 'esm',
             bundle: true,
-            entryPoints: ["wwwroot/Grid.tsx"],
+            entryPoints: ["wwwroot/SyncfusionModule.tsx"],
             outdir: `wwwroot`,
             target: [
                 'es2020'

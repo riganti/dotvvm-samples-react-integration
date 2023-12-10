@@ -34,7 +34,9 @@ namespace Syncfusion
             {
                 Location = new UrlResourceLocation("~/Resources/style.css")
             });
-            config.Resources.RegisterScriptModuleFile("Grid", "~/wwwroot/Grid.js");
+
+            config.Resources.RegisterScriptModuleFile("SyncfusionModule", "~/wwwroot/SyncfusionModule.js", dependencies: new[] { "SyncfusionModule.css" });
+            config.Resources.RegisterStylesheetFile("SyncfusionModule.css", "~/wwwroot/SyncfusionModule.css");
         }
 
 		public void ConfigureServices(IDotvvmServiceCollection options)

@@ -102,6 +102,45 @@ namespace Syncfusion.ViewModels
             },
         };
 
+        [Bind(Direction.ServerToClientFirstRequest)]
+        public List<GridColumnDto> GridColumns => new()
+        {
+            new GridColumnDto()
+            {
+                field = "OrderID",
+                width = 100,
+                textAlign = GridColumnTextAlign.Right
+            },
+            new GridColumnDto()
+            {
+                field = "CustomerID",
+                width = 100,
+                textAlign = GridColumnTextAlign.Left
+            },
+            new GridColumnDto()
+            {
+                field = "EmployeeID",
+                width = 100,
+                textAlign = GridColumnTextAlign.Right
+            },
+            new GridColumnDto()
+            {
+                field = "Freight",
+                width = 100,
+                textAlign = GridColumnTextAlign.Right,
+                format = "C2"
+            },
+            new GridColumnDto()
+            {
+                field = "ShipCountry",
+                width = 100,
+                textAlign = GridColumnTextAlign.Left
+            }
+        };
+
+        public int? SelectedRowIndex { get; set; }
+
+        public DateTime? SelectedDate { get; set; } = DateTime.Now;
 
         public class GridDataDto
         {
@@ -113,5 +152,19 @@ namespace Syncfusion.ViewModels
 
         }
 
+        public class GridColumnDto
+        {
+            public string field { get; set; }
+            public int width { get; set; }
+            public GridColumnTextAlign textAlign { get; set; }
+            public string format { get; set; }
+        }
+
+    }
+
+    public enum GridColumnTextAlign
+    {
+        Left,
+        Right
     }
 }
